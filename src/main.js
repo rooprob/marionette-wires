@@ -9,6 +9,7 @@ import HeaderService from './header/service';
 import FlashesService from './flashes/service';
 
 import IndexRouter from './index/router';
+import KidsRouter from './kids/router';
 import ColorsRouter from './colors/router';
 import BooksRouter from './books/router';
 
@@ -34,6 +35,10 @@ $(document).ajaxError(() => {
 });
 
 app.index = new IndexRouter({
+  container: app.layout.content
+});
+
+app.kids = new KidsRouter({
   container: app.layout.content
 });
 

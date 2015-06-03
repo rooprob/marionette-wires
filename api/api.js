@@ -8,5 +8,6 @@ api.use(bodyParser.json());
 
 require('./books/routes')(api);
 require('./colors/routes')(api);
+require('./kids/routes')(api);
 
 module.exports = api;
